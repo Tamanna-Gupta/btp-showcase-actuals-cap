@@ -32,6 +32,9 @@ node() {
     stage('build') {
         mtaBuild script: this
     }
+    stage('CAP-TEST') {
+        println "hi I am here"
+    }
     stage('deploy') {
         cloudFoundryDeploy script: this
     }
